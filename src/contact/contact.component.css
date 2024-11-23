@@ -1,0 +1,13 @@
+.contact{
+    color: var(--second-color);
+}
+.whiteLine{
+    background-color: var(--second-color);
+}
+.sendBtn{
+   background-color:  var(--main-color);
+}
+.form-control:focus {
+
+    box-shadow: none;
+}

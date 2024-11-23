@@ -1,0 +1,91 @@
+<div class="portfolio  py-5 overflow-auto">
+    <h2 class="text-uppercase fw-bold fs-1 pt-5 mt-5 text-center">portfolio component</h2>
+    <div class="star d-flex justify-content-center align-items-center ">
+        <div class="whiteLine me-3 "> </div>
+        <i class="fa-solid fa-star "></i>
+        <div class="whiteLine ms-3"> </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row g-5 pt-4">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="image-container rounded rounded-3 position-relative pics" (click)="openPopup('./assets/img/poert1.png')">
+                    <img src="./assets/img/poert1.png" alt="" class="w-100 rounded-3">
+                    <div class="picLayer position-absolute d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus display-1 text-white"></i>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="image-container rounded rounded-3 position-relative pics" (click)="openPopup('./assets/img/port2.png')">
+                    <img src="./assets/img/port2.png" alt="" class="w-100 rounded-3">
+                    <div class="picLayer position-absolute d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus display-1 text-white"></i>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="image-container rounded rounded-3 position-relative pics" (click)="openPopup('./assets/img/port3.png')">
+                    <img src="./assets/img/port3.png" alt="" class="w-100 rounded-3">
+                    <div class="picLayer position-absolute d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus display-1 text-white"></i>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="image-container rounded rounded-3 position-relative pics" (click)="openPopup('./assets/img/poert1.png')">
+                    <img src="./assets/img/poert1.png" alt="" class="w-100 rounded-3">
+                    <div class="picLayer position-absolute d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus display-1 text-white"></i>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="image-container rounded rounded-3 position-relative pics" (click)="openPopup('./assets/img/port2.png')">
+                    <img src="./assets/img/port2.png" alt="" class="w-100 rounded-3">
+                    <div class="picLayer position-absolute d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus display-1 text-white"></i>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="image-container rounded rounded-3 position-relative pics" (click)="openPopup('./assets/img/port3.png')">
+                    <img src="./assets/img/port3.png" alt="" class="w-100 rounded-3">
+                    <div class="picLayer position-absolute d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus display-1 text-white"></i>
+                       
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+@if (showPopup) {
+    <div id="popupWindow" class="hidden d-flex justify-content-center align-items-center position-fixed" (click)="closePopup()" >
+        <img id="popupImage" [src]="popupImageSrc" alt="" class="w-forpopUp">
+        <button id="closeButton" (click)="closePopup()"  class="btn"><i
+                class="fa-regular fa-circle-xmark fs-1"></i></button>
+    </div>
+    }

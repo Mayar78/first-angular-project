@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --main-color: #1abc9c;
+    --second-color: #2c3e50;
+   --bs-primary-rgb: 13, 110, 253;
+   --bs-bg-opacity: .25;
+}
+.whiteLine{
+    height: 4px;
+    width: 80px;
+    background:white;
+}

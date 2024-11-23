@@ -1,0 +1,58 @@
+.whiteLine{
+    background-color: var(--second-color);
+}
+.portfolio{
+    color: var(--second-color);
+    
+}
+.pics{
+    overflow: hidden;
+}
+.picLayer{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+overflow: hidden;
+background-color: var(--main-color);
+transition: all .6s;
+cursor: pointer;
+}
+.pics:hover .picLayer{
+    opacity: .8;
+}
+.fullImg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+    z-index:999999;
+    height: auto;
+
+}
+.fullImg img{
+    width: 40%;
+}
+#popupWindow{
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+    width: 100%;
+ 
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+height: auto;
+
+}
+.w-forpopUp{
+    width: 550px;
+}
+#closeButton{
+    position: absolute;
+    top: 25%;
+    right: 25%;
+}

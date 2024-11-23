@@ -1,0 +1,17 @@
+
+.nav{
+    background-color: #2c3e50;
+    z-index: 10000000000;
+}
+.navActive{
+    background-color: #1abc9c;
+    border-radius: 5px;
+}
+
+.scrollPading{
+    padding: 25px;
+  
+}
+nav{
+    transition: all .5s;
+}
